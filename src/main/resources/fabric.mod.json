@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "nemos-mossy-blocks",
+	"version": "${version}",
+	"name": "Nemo's Mossy Blocks",
+	"description": "Bring moss to more blocks!",
+	"authors": [
+		"NemoNotFound"
+	],
+	"contact": {
+		"homepage": "https://nemonotfound.com/",
+		"sources": "https://github.com/NemoNotFound/NemosMossyBlocks"
+	},
+	"license": "MIT",
+	"icon": "assets/nemos-mossy-blocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nemonotfound.NemosMossyBlocks"
+		],
+		"fabric-datagen": [
+			"com.nemonotfound.NemosMossyBlocksDataGenerator"
+		]
+	},
+	"mixins": [
+		"nemos-mossy-blocks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
