@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nemos-mossy-blocks:block/mossy_mangrove_slab"
+    },
+    "type=double": {
+      "model": "nemos-mossy-blocks:block/mossy_mangrove_planks"
+    },
+    "type=top": {
+      "model": "nemos-mossy-blocks:block/mossy_mangrove_slab_top"
+    }
+  }
+}

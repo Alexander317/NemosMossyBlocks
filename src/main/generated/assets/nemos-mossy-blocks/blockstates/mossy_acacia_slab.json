@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nemos-mossy-blocks:block/mossy_acacia_slab"
+    },
+    "type=double": {
+      "model": "nemos-mossy-blocks:block/mossy_acacia_planks"
+    },
+    "type=top": {
+      "model": "nemos-mossy-blocks:block/mossy_acacia_slab_top"
+    }
+  }
+}

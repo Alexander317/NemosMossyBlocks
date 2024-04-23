@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "nemos-mossy-blocks:mossy_acacia_planks",
+    "nemos-mossy-blocks:mossy_bamboo_planks",
+    "nemos-mossy-blocks:mossy_birch_planks",
+    "nemos-mossy-blocks:mossy_cherry_planks",
+    "nemos-mossy-blocks:mossy_crimson_planks",
+    "nemos-mossy-blocks:mossy_dark_oak_planks",
+    "nemos-mossy-blocks:mossy_jungle_planks",
+    "nemos-mossy-blocks:mossy_mangrove_planks",
+    "nemos-mossy-blocks:mossy_oak_planks",
+    "nemos-mossy-blocks:mossy_spruce_planks",
+    "nemos-mossy-blocks:mossy_warped_planks"
+  ]
+}

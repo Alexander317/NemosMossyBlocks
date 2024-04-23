@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "nemos-mossy-blocks:block/mossy_cherry_planks"
+  }
+}

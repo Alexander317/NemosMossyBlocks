@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "nemos-mossy-blocks:block/mossy_bamboo_planks"
+  }
+}

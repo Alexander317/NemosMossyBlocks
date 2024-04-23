@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "nemos-mossy-blocks:block/mossy_dark_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "nemos-mossy-blocks:block/mossy_dark_oak_pressure_plate_down"
+    }
+  }
+}

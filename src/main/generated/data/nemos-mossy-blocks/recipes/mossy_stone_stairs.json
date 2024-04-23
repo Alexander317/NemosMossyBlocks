@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_stone_stairs",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_stone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "nemos-mossy-blocks:mossy_stone_stairs"
+  }
+}
