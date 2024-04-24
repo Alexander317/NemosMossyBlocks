@@ -24,6 +24,8 @@
   <a href="https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks">CurseForge</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://modrinth.com/mod/nemos-mossy-blocks">Modrinth</a>
 </p>
 
+<br>
+
 <p align="center">
   If you need a Minecraft Server, go check out Kinetic Hosting and save 15% for your first month with the code "Nemo"! Just click here on the banner! <br>
   <a href="https://billing.kinetichosting.net/aff.php?aff=679">
