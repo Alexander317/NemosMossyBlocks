@@ -177,6 +177,19 @@ public class RecipeProvider extends FabricRecipeProvider {
         createButtonRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_BUTTON, "has_mossy_planks",
                 "mossy_wooden_button", ModItemTags.MOSSY_PLANKS);
 
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_STONE_SLAB, ModBlocks.MOSSY_STONE, 2);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                ModBlocks.MOSSY_STONE_STAIRS, ModBlocks.MOSSY_STONE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                Blocks.MOSSY_STONE_BRICK_SLAB, ModBlocks.MOSSY_STONE, 2);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                Blocks.MOSSY_STONE_BRICKS, ModBlocks.MOSSY_STONE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                Blocks.MOSSY_STONE_BRICK_STAIRS, ModBlocks.MOSSY_STONE);
+        VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
+                Blocks.MOSSY_STONE_BRICK_WALL, ModBlocks.MOSSY_STONE);
+
     }
 
     private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
