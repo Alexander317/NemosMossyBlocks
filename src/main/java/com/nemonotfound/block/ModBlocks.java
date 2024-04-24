@@ -1,13 +1,12 @@
 package com.nemonotfound.block;
 
 import com.nemonotfound.item.ModItemGroups;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -24,7 +23,7 @@ import static net.minecraft.block.Blocks.*;
 public class ModBlocks {
 
     public static final Block MOSSY_STONE = registerBlock("mossy_stone",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.STONE_GRAY).instrument(Instrument.BASEDRUM)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(Instrument.BASEDRUM)
                     .requiresTool().strength(2.0f, 6.0f)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_STONE_STAIRS = registerBlock("mossy_stone_stairs",
             Blocks.createStairsBlock(MOSSY_STONE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -37,7 +36,7 @@ public class ModBlocks {
     public static final Block MOSSY_STONE_BUTTON = registerBlock("mossy_stone_button",
             Blocks.createStoneButtonBlock(), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_PLANKS = registerBlock("mossy_acacia_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.ORANGE).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_STAIRS = registerBlock("mossy_acacia_stairs",
@@ -51,13 +50,13 @@ public class ModBlocks {
     public static final Block MOSSY_ACACIA_BUTTON = registerBlock("mossy_acacia_button",
             Blocks.createWoodenButtonBlock(BlockSetType.ACACIA), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_FENCE = registerBlock("mossy_acacia_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(ACACIA_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(ACACIA_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_FENCE_GATE = registerBlock("mossy_acacia_fence_gate",
-            new FenceGateBlock(WoodType.ACACIA, FabricBlockSettings.copyOf(ACACIA_FENCE_GATE)),
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.copy(ACACIA_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BAMBOO_PLANKS = registerBlock("mossy_bamboo_planks",
-            new Block(FabricBlockSettings.copyOf(BAMBOO_PLANKS)),
+            new Block(AbstractBlock.Settings.copy(BAMBOO_PLANKS)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BAMBOO_STAIRS = registerBlock("mossy_bamboo_stairs",
             Blocks.createStairsBlock(MOSSY_BAMBOO_PLANKS), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -70,13 +69,13 @@ public class ModBlocks {
     public static final Block MOSSY_BAMBOO_BUTTON = registerBlock("mossy_bamboo_button",
             Blocks.createWoodenButtonBlock(BlockSetType.BAMBOO), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BAMBOO_FENCE = registerBlock("mossy_bamboo_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(BAMBOO_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(BAMBOO_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BAMBOO_FENCE_GATE = registerBlock("mossy_bamboo_fence_gate",
-            new FenceGateBlock(WoodType.BAMBOO, FabricBlockSettings.copyOf(BAMBOO_FENCE_GATE)),
+            new FenceGateBlock(WoodType.BAMBOO, AbstractBlock.Settings.copy(BAMBOO_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_PLANKS = registerBlock("mossy_birch_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_STAIRS = registerBlock("mossy_birch_stairs",
@@ -90,13 +89,13 @@ public class ModBlocks {
     public static final Block MOSSY_BIRCH_BUTTON = registerBlock("mossy_birch_button",
             Blocks.createWoodenButtonBlock(BlockSetType.BIRCH), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_FENCE = registerBlock("mossy_birch_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(BIRCH_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(BIRCH_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_FENCE_GATE = registerBlock("mossy_birch_fence_gate",
-            new FenceGateBlock(WoodType.BIRCH, FabricBlockSettings.copyOf(BIRCH_FENCE_GATE)),
+            new FenceGateBlock(WoodType.BIRCH, AbstractBlock.Settings.copy(BIRCH_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_PLANKS = registerBlock("mossy_cherry_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.TERRACOTTA_WHITE).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_STAIRS = registerBlock("mossy_cherry_stairs",
@@ -110,13 +109,13 @@ public class ModBlocks {
     public static final Block MOSSY_CHERRY_BUTTON = registerBlock("mossy_cherry_button",
             Blocks.createWoodenButtonBlock(BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_FENCE = registerBlock("mossy_cherry_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(CHERRY_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(CHERRY_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_FENCE_GATE = registerBlock("mossy_cherry_fence_gate",
-            new FenceGateBlock(WoodType.CHERRY, FabricBlockSettings.copyOf(CHERRY_FENCE_GATE)),
+            new FenceGateBlock(WoodType.CHERRY, AbstractBlock.Settings.copy(CHERRY_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_PLANKS = registerBlock("mossy_crimson_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_STAIRS = registerBlock("mossy_crimson_stairs",
@@ -130,13 +129,13 @@ public class ModBlocks {
     public static final Block MOSSY_CRIMSON_BUTTON = registerBlock("mossy_crimson_button",
             Blocks.createWoodenButtonBlock(BlockSetType.CRIMSON), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_FENCE = registerBlock("mossy_crimson_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(CRIMSON_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(CRIMSON_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_FENCE_GATE = registerBlock("mossy_crimson_fence_gate",
-            new FenceGateBlock(WoodType.CRIMSON, FabricBlockSettings.copyOf(CRIMSON_FENCE_GATE)),
+            new FenceGateBlock(WoodType.CRIMSON, AbstractBlock.Settings.copy(CRIMSON_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_PLANKS = registerBlock("mossy_dark_oak_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.BROWN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_STAIRS = registerBlock("mossy_dark_oak_stairs",
@@ -150,13 +149,13 @@ public class ModBlocks {
     public static final Block MOSSY_DARK_OAK_BUTTON = registerBlock("mossy_dark_oak_button",
             Blocks.createWoodenButtonBlock(BlockSetType.DARK_OAK), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_FENCE = registerBlock("mossy_dark_oak_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(DARK_OAK_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(DARK_OAK_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_FENCE_GATE = registerBlock("mossy_dark_oak_fence_gate",
-            new FenceGateBlock(WoodType.DARK_OAK, FabricBlockSettings.copyOf(DARK_OAK_FENCE_GATE)),
+            new FenceGateBlock(WoodType.DARK_OAK, AbstractBlock.Settings.copy(DARK_OAK_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_PLANKS = registerBlock("mossy_jungle_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.DIRT_BROWN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_STAIRS = registerBlock("mossy_jungle_stairs",
@@ -170,13 +169,13 @@ public class ModBlocks {
     public static final Block MOSSY_JUNGLE_BUTTON = registerBlock("mossy_jungle_button",
             Blocks.createWoodenButtonBlock(BlockSetType.JUNGLE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_FENCE = registerBlock("mossy_jungle_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(JUNGLE_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(JUNGLE_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_FENCE_GATE = registerBlock("mossy_jungle_fence_gate",
-            new FenceGateBlock(WoodType.JUNGLE, FabricBlockSettings.copyOf(JUNGLE_FENCE_GATE)),
+            new FenceGateBlock(WoodType.JUNGLE, AbstractBlock.Settings.copy(JUNGLE_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_PLANKS = registerBlock("mossy_mangrove_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.RED).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.RED).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_STAIRS = registerBlock("mossy_mangrove_stairs",
@@ -190,13 +189,13 @@ public class ModBlocks {
     public static final Block MOSSY_MANGROVE_BUTTON = registerBlock("mossy_mangrove_button",
             Blocks.createWoodenButtonBlock(BlockSetType.MANGROVE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_FENCE = registerBlock("mossy_mangrove_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(MANGROVE_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(MANGROVE_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_FENCE_GATE = registerBlock("mossy_mangrove_fence_gate",
-            new FenceGateBlock(WoodType.MANGROVE, FabricBlockSettings.copyOf(MANGROVE_FENCE_GATE)),
+            new FenceGateBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(MANGROVE_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_PLANKS = registerBlock("mossy_oak_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_STAIRS = registerBlock("mossy_oak_stairs",
@@ -210,10 +209,10 @@ public class ModBlocks {
     public static final Block MOSSY_OAK_BUTTON = registerBlock("mossy_oak_button",
             Blocks.createWoodenButtonBlock(BlockSetType.OAK), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_FENCE = registerBlock("mossy_oak_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(OAK_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(OAK_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_FENCE_GATE = registerBlock("mossy_oak_fence_gate",
-            new FenceGateBlock(WoodType.OAK, FabricBlockSettings.copyOf(OAK_FENCE_GATE)),
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(OAK_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_PLANKS = registerBlock("mossy_spruce_planks",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN)
@@ -230,13 +229,13 @@ public class ModBlocks {
     public static final Block MOSSY_SPRUCE_BUTTON = registerBlock("mossy_spruce_button",
             Blocks.createWoodenButtonBlock(BlockSetType.SPRUCE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_FENCE = registerBlock("mossy_spruce_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(SPRUCE_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(SPRUCE_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_FENCE_GATE = registerBlock("mossy_spruce_fence_gate",
-            new FenceGateBlock(WoodType.SPRUCE, FabricBlockSettings.copyOf(SPRUCE_FENCE_GATE)),
+            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.copy(SPRUCE_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_PLANKS = registerBlock("mossy_warped_planks",
-            new Block(FabricBlockSettings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_STAIRS = registerBlock("mossy_warped_stairs",
@@ -250,16 +249,16 @@ public class ModBlocks {
     public static final Block MOSSY_WARPED_BUTTON = registerBlock("mossy_warped_button",
             Blocks.createWoodenButtonBlock(BlockSetType.WARPED), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_FENCE = registerBlock("mossy_warped_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(WARPED_FENCE)),
+            new FenceBlock(AbstractBlock.Settings.copy(WARPED_FENCE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_FENCE_GATE = registerBlock("mossy_warped_fence_gate",
-            new FenceGateBlock(WoodType.WARPED, FabricBlockSettings.copyOf(WARPED_FENCE_GATE)),
+            new FenceGateBlock(WoodType.WARPED, AbstractBlock.Settings.copy(WARPED_FENCE_GATE)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
 
     @SafeVarargs
     private static Block registerBlock(String path, Block block, RegistryKey<ItemGroup>... itemGroups) {
         Block registeredBlock = Registry.register(Registries.BLOCK, new Identifier(MOD_ID, path), block);
-        Registry.register(Registries.ITEM, new Identifier(MOD_ID, path), new BlockItem(block, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, path), new BlockItem(block, new Item.Settings()));
 
         Arrays.stream(itemGroups).forEach(itemGroup -> ItemGroupEvents.modifyEntriesEvent(itemGroup)
                 .register(content -> content.add(block)));

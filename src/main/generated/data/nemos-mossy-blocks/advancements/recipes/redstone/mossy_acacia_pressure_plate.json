@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "nemos-mossy-blocks:mossy_planks"
+            "items": "#nemos-mossy-blocks:mossy_planks"
           }
         ]
       },

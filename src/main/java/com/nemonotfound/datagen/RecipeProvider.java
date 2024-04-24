@@ -12,12 +12,15 @@ import net.minecraft.data.server.recipe.VanillaRecipeProvider;
 import net.minecraft.item.Item;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.TagKey;
+
+import java.util.concurrent.CompletableFuture;
 
 public class RecipeProvider extends FabricRecipeProvider {
 
-    public RecipeProvider(FabricDataOutput output) {
-        super(output);
+    public RecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
 
     @Override
