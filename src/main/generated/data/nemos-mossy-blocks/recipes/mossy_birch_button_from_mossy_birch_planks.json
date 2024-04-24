@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "mossy_wooden_button",
+  "ingredients": [
+    {
+      "item": "nemos-mossy-blocks:mossy_birch_planks"
+    }
+  ],
+  "result": {
+    "item": "nemos-mossy-blocks:mossy_birch_button"
+  }
+}

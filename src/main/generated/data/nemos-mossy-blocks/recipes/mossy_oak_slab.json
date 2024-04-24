@@ -1,18 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "mossy_wooden_slab",
   "key": {
     "#": {
-      "item": "nemos-mossy-blocks:mossy_stone"
+      "item": "nemos-mossy-blocks:mossy_oak_planks"
     }
   },
   "pattern": [
-    "#  ",
-    "## ",
     "###"
   ],
   "result": {
-    "count": 4,
-    "item": "nemos-mossy-blocks:mossy_stone_stairs"
+    "count": 6,
+    "item": "nemos-mossy-blocks:mossy_oak_slab"
   }
 }

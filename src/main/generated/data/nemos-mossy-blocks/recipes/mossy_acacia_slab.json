@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "mossy_wooden_slab",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_acacia_planks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "nemos-mossy-blocks:mossy_acacia_slab"
+  }
+}

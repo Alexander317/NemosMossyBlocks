@@ -1,18 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "redstone",
   "key": {
     "#": {
       "item": "nemos-mossy-blocks:mossy_stone"
     }
   },
   "pattern": [
-    "#  ",
-    "## ",
-    "###"
+    "##"
   ],
   "result": {
-    "count": 4,
-    "item": "nemos-mossy-blocks:mossy_stone_stairs"
+    "item": "nemos-mossy-blocks:mossy_stone_pressure_plate"
   }
 }

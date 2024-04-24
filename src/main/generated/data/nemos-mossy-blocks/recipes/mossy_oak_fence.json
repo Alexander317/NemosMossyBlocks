@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mossy_wooden_fence",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_oak_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "nemos-mossy-blocks:mossy_oak_fence"
+  }
+}

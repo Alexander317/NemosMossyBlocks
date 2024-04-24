@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "mossy_wooden_pressure_plate",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_jungle_planks"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "nemos-mossy-blocks:mossy_jungle_pressure_plate"
+  }
+}
