@@ -21,7 +21,7 @@
 
 <h2 align="center">Downloads</h2>
 <p align="center">
-  <pre align="center"><a href="https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks">CurseForge</a>            <a href="https://modrinth.com/mod/nemos-mossy-blocks">Modrinth</a></pre>
+  <a href="https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks">CurseForge</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://modrinth.com/mod/nemos-mossy-blocks">Modrinth</a>
 </p>
 
 <p align="center">
