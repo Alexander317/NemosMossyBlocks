@@ -1,7 +1,7 @@
-package com.nemonotfound.datagen;
+package com.nemonotfound.nemosmossyblocks.datagen;
 
-import com.nemonotfound.block.ModBlocks;
-import com.nemonotfound.registry.tag.ModItemTags;
+import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;

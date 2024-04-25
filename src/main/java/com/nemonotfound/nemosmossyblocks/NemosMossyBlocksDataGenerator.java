@@ -1,6 +1,6 @@
-package com.nemonotfound;
+package com.nemonotfound.nemosmossyblocks;
 
-import com.nemonotfound.datagen.*;
+import com.nemonotfound.nemosmossyblocks.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 

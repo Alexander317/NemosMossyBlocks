@@ -1,13 +1,13 @@
-package com.nemonotfound.datagen;
+package com.nemonotfound.nemosmossyblocks.datagen;
 
-import com.nemonotfound.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-import static com.nemonotfound.registry.tag.ModItemTags.MOSSY_PLANKS;
+import static com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags.MOSSY_PLANKS;
 
 public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
 

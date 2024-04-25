@@ -1,6 +1,6 @@
-package com.nemonotfound;
+package com.nemonotfound.nemosmossyblocks;
 
-import com.nemonotfound.item.ModItemGroups;
+import com.nemonotfound.nemosmossyblocks.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

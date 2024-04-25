@@ -1,11 +1,11 @@
-package com.nemonotfound.registry.tag;
+package com.nemonotfound.nemosmossyblocks.registry.tag;
 
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
-import static com.nemonotfound.NemosMossyBlocks.MOD_ID;
+import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 
 public class ModItemTags {
 

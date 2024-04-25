@@ -1,6 +1,6 @@
-package com.nemonotfound.item;
+package com.nemonotfound.nemosmossyblocks.item;
 
-import com.nemonotfound.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -12,7 +12,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import static com.nemonotfound.NemosMossyBlocks.MOD_ID;
+import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 
 public class ModItemGroups {
 

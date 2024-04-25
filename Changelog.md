@@ -1,18 +1,7 @@
-# Changelog
+# Changelog v1.0.1
 
-## Additions
-- Added Mossy Stone
-  - Mossy Stone Stairs
-  - Mossy Stone Slab
-  - Mossy Stone Pressure Plate
-  - Mossy Stone Button
-- Added Mossy Planks
-  - Mossy Wooden Stairs
-  - Mossy Wooden Slab
-  - Mossy Wooden Pressure Plate
-  - Mossy Wooden Button
-  - Mossy Wooden Fence
-  - Mossy Wooden Fence Gate
+## Fixes
+- Game crashes when using Nemo's Mossy Blocks with Nemo's Woodcutter
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>

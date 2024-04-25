@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.nemonotfound.NemosMossyBlocks"
+			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocks"
 		],
 		"fabric-datagen": [
-			"com.nemonotfound.NemosMossyBlocksDataGenerator"
+			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocksDataGenerator"
 		]
 	},
 	"mixins": [
