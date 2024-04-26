@@ -8,6 +8,7 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.concurrent.CompletableFuture;
 
 import static com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags.MOSSY_PLANKS;
+import static com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags.MOSSY_STAINED_GLASS;
 
 public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
@@ -30,5 +31,23 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.MOSSY_OAK_PLANKS.asItem())
                 .add(ModBlocks.MOSSY_SPRUCE_PLANKS.asItem())
                 .add(ModBlocks.MOSSY_WARPED_PLANKS.asItem());
+        
+        getOrCreateTagBuilder(MOSSY_STAINED_GLASS)
+                .add(ModBlocks.MOSSY_BLACK_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_BLUE_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_BROWN_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_CYAN_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_GRAY_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_GREEN_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_LIME_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_MAGENTA_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_ORANGE_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_PINK_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_PURPLE_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_RED_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_WHITE_STAINED_GLASS.asItem())
+                .add(ModBlocks.MOSSY_YELLOW_STAINED_GLASS.asItem());
     }
 }

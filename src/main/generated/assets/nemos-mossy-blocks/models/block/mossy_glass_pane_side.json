@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side",
+  "textures": {
+    "edge": "nemos-mossy-blocks:block/mossy_glass_pane_top",
+    "pane": "nemos-mossy-blocks:block/mossy_glass"
+  }
+}

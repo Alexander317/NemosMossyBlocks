@@ -10,4 +10,5 @@ import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.MOD_ID;
 public class ModItemTags {
 
     public static final TagKey<Item> MOSSY_PLANKS = TagKey.of(RegistryKeys.ITEM, new Identifier(MOD_ID, "mossy_planks"));
+    public static final TagKey<Item> MOSSY_STAINED_GLASS = TagKey.of(RegistryKeys.ITEM, new Identifier(MOD_ID, "mossy_stained_glass"));
 }

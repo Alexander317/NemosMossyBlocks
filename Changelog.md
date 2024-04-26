@@ -1,7 +1,7 @@
-# Changelog v1.0.1
+# Changelog v1.1.0
 
-## Fixes
-- Game crashes when using Nemo's Mossy Blocks with Nemo's Woodcutter
+## Additions
+- Added Mossy Glass, Glass Panes, Stained Glass & Stained Glass Panes
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>

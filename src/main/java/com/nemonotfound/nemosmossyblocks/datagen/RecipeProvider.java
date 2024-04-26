@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
 import net.minecraft.item.Item;
@@ -37,6 +38,24 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.OAK_PLANKS, ModBlocks.MOSSY_OAK_PLANKS, "mossy_planks");
         createMossyBlockRecipe(exporter, Blocks.SPRUCE_PLANKS, ModBlocks.MOSSY_SPRUCE_PLANKS, "mossy_planks");
         createMossyBlockRecipe(exporter, Blocks.WARPED_PLANKS, ModBlocks.MOSSY_WARPED_PLANKS, "mossy_planks");
+        createMossyBlockRecipe(exporter, Blocks.GLASS, ModBlocks.MOSSY_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.BLUE_STAINED_GLASS, ModBlocks.MOSSY_BLUE_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.BROWN_STAINED_GLASS, ModBlocks.MOSSY_BROWN_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.CYAN_STAINED_GLASS, ModBlocks.MOSSY_CYAN_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.GRAY_STAINED_GLASS, ModBlocks.MOSSY_GRAY_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.GREEN_STAINED_GLASS, ModBlocks.MOSSY_GREEN_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.LIGHT_BLUE_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.LIGHT_GRAY_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.LIME_STAINED_GLASS, ModBlocks.MOSSY_LIME_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.MAGENTA_STAINED_GLASS, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.ORANGE_STAINED_GLASS, ModBlocks.MOSSY_ORANGE_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.PINK_STAINED_GLASS, ModBlocks.MOSSY_PINK_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.PURPLE_STAINED_GLASS, ModBlocks.MOSSY_PURPLE_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.RED_STAINED_GLASS, ModBlocks.MOSSY_RED_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.TINTED_GLASS, ModBlocks.MOSSY_TINTED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, "mossy_glass");
 
         createStairsRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_STAIRS);
         createStairsRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_STAIRS, "has_mossy_planks",
@@ -193,6 +212,40 @@ public class RecipeProvider extends FabricRecipeProvider {
         VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,
                 Blocks.MOSSY_STONE_BRICK_WALL, ModBlocks.MOSSY_STONE);
 
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GLASS, ModBlocks.MOSSY_GLASS_PANE);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BLUE_STAINED_GLASS, ModBlocks.MOSSY_BLUE_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_BROWN_STAINED_GLASS, ModBlocks.MOSSY_BROWN_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_CYAN_STAINED_GLASS, ModBlocks.MOSSY_CYAN_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GRAY_STAINED_GLASS, ModBlocks.MOSSY_GRAY_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_GREEN_STAINED_GLASS, ModBlocks.MOSSY_GREEN_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_LIME_STAINED_GLASS, ModBlocks.MOSSY_LIME_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_ORANGE_STAINED_GLASS, ModBlocks.MOSSY_ORANGE_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_PINK_STAINED_GLASS, ModBlocks.MOSSY_PINK_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_PURPLE_STAINED_GLASS, ModBlocks.MOSSY_PURPLE_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_RED_STAINED_GLASS, ModBlocks.MOSSY_RED_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+        createGlassPaneRecipe(exporter, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE,
+                "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
+
     }
 
     private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
@@ -271,5 +324,24 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .input(input)
                 .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input.asItem()))
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, input));
+    }
+
+    private void createGlassPaneRecipe(RecipeExporter exporter, Block input, Block result) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result, 16)
+                .input('#', input)
+                .pattern("###")
+                .pattern("###")
+                .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    private void createGlassPaneRecipe(RecipeExporter exporter, Block input, Block result, String criterion, String group, TagKey<Item> tag) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, result, 16)
+                .input('#', input)
+                .pattern("###")
+                .pattern("###")
+                .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+                .group(group)
+                .offerTo(exporter);
     }
 }

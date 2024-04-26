@@ -108,6 +108,25 @@ public class ModelProvider extends FabricModelProvider {
         mossyWarpedPlanksTexturePool.button(ModBlocks.MOSSY_WARPED_BUTTON);
         mossyWarpedPlanksTexturePool.fence(ModBlocks.MOSSY_WARPED_FENCE);
         mossyWarpedPlanksTexturePool.fenceGate(ModBlocks.MOSSY_WARPED_FENCE_GATE);
+
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_GLASS, ModBlocks.MOSSY_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_BLUE_STAINED_GLASS, ModBlocks.MOSSY_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_BROWN_STAINED_GLASS, ModBlocks.MOSSY_BROWN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_CYAN_STAINED_GLASS, ModBlocks.MOSSY_CYAN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_GRAY_STAINED_GLASS, ModBlocks.MOSSY_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_GREEN_STAINED_GLASS, ModBlocks.MOSSY_GREEN_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_BLUE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS, ModBlocks.MOSSY_LIGHT_GRAY_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_LIME_STAINED_GLASS, ModBlocks.MOSSY_LIME_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_MAGENTA_STAINED_GLASS, ModBlocks.MOSSY_MAGENTA_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_ORANGE_STAINED_GLASS, ModBlocks.MOSSY_ORANGE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_PINK_STAINED_GLASS, ModBlocks.MOSSY_PINK_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_PURPLE_STAINED_GLASS, ModBlocks.MOSSY_PURPLE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_RED_STAINED_GLASS, ModBlocks.MOSSY_RED_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOSSY_TINTED_GLASS);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS_PANE);
+        blockStateModelGenerator.registerGlassPane(ModBlocks.MOSSY_YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE);
     }
 
     @Override

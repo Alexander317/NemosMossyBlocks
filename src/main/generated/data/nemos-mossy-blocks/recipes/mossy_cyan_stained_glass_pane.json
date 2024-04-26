@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mossy_stained_glass",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_cyan_stained_glass"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 16,
+    "id": "nemos-mossy-blocks:mossy_cyan_stained_glass_pane"
+  }
+}

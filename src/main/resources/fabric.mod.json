@@ -18,6 +18,9 @@
 		"main": [
 			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocks"
 		],
+		"client": [
+			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocksClient"
+		],
 		"fabric-datagen": [
 			"com.nemonotfound.nemosmossyblocks.NemosMossyBlocksDataGenerator"
 		]
