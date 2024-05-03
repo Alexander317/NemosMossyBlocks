@@ -137,5 +137,27 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDropWithSilkTouch(ModBlocks.MOSSY_RED_STAINED_GLASS_PANE);
         this.addDropWithSilkTouch(ModBlocks.MOSSY_WHITE_STAINED_GLASS_PANE);
         this.addDropWithSilkTouch(ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE);
+        this.addDrop(ModBlocks.MOSSY_ACACIA_LOG);
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_BLOCK);
+        this.addDrop(ModBlocks.MOSSY_BIRCH_LOG);
+        this.addDrop(ModBlocks.MOSSY_CHERRY_LOG);
+        this.addDrop(ModBlocks.MOSSY_CRIMSON_STEM);
+        this.addDrop(ModBlocks.MOSSY_DARK_OAK_LOG);
+        this.addDrop(ModBlocks.MOSSY_JUNGLE_LOG);
+        this.addDrop(ModBlocks.MOSSY_MANGROVE_LOG);
+        this.addDrop(ModBlocks.MOSSY_OAK_LOG);
+        this.addDrop(ModBlocks.MOSSY_SPRUCE_LOG);
+        this.addDrop(ModBlocks.MOSSY_WARPED_STEM);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_ACACIA_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_BAMBOO_BLOCK);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_BIRCH_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_CHERRY_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_OAK_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_WARPED_STEM);
     }
 }

@@ -1,5 +1,6 @@
 package com.nemonotfound.nemosmossyblocks;
 
+import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
 import com.nemonotfound.nemosmossyblocks.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,8 @@ public class NemosMossyBlocks implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		log.info("Thank you for using Nemo's Mossy Blocks!");
+		ModBlocks.registerBlocks();
 		ModItemGroups.registerItemGroups();
+		ModItemGroups.registerItemsToItemGroups();
 	}
 }

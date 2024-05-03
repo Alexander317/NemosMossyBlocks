@@ -9,7 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://nemonotfound.com/",
-		"sources": "https://github.com/NemoNotFound/NemosMossyBlocks"
+		"sources": "https://github.com/NemoNotFound/NemosMossyBlocks",
+		"issues": "https://github.com/NemoNotFound/NemosMossyBlocks/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/nemos-mossy-blocks/icon.png",
@@ -30,7 +31,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.5",
+		"minecraft": "~1.20.6",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

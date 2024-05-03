@@ -7,8 +7,7 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-import static com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags.MOSSY_PLANKS;
-import static com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags.MOSSY_STAINED_GLASS;
+import static com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags.*;
 
 public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
@@ -49,5 +48,39 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.MOSSY_RED_STAINED_GLASS.asItem())
                 .add(ModBlocks.MOSSY_WHITE_STAINED_GLASS.asItem())
                 .add(ModBlocks.MOSSY_YELLOW_STAINED_GLASS.asItem());
+
+        getOrCreateTagBuilder(MOSSY_ACACIA_LOGS)
+                .add(ModBlocks.MOSSY_ACACIA_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_ACACIA_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_BAMBOO_BLOCKS)
+                .add(ModBlocks.MOSSY_BAMBOO_BLOCK.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_BAMBOO_BLOCK.asItem());
+        getOrCreateTagBuilder(MOSSY_BIRCH_LOGS)
+                .add(ModBlocks.MOSSY_BIRCH_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_BIRCH_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_CHERRY_LOGS)
+                .add(ModBlocks.MOSSY_CHERRY_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_CHERRY_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_CRIMSON_STEMS)
+                .add(ModBlocks.MOSSY_CRIMSON_STEM.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM.asItem());
+        getOrCreateTagBuilder(MOSSY_DARK_OAK_LOGS)
+                .add(ModBlocks.MOSSY_DARK_OAK_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_JUNGLE_LOGS)
+                .add(ModBlocks.MOSSY_JUNGLE_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_MANGROVE_LOGS)
+                .add(ModBlocks.MOSSY_MANGROVE_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_OAK_LOGS)
+                .add(ModBlocks.MOSSY_OAK_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_OAK_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_SPRUCE_LOGS)
+                .add(ModBlocks.MOSSY_SPRUCE_LOG.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG.asItem());
+        getOrCreateTagBuilder(MOSSY_WARPED_STEMS)
+                .add(ModBlocks.MOSSY_WARPED_STEM.asItem())
+                .add(ModBlocks.MOSSY_STRIPPED_WARPED_STEM.asItem());
     }
 }

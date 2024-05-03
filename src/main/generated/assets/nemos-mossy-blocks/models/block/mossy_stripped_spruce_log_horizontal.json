@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "nemos-mossy-blocks:block/mossy_stripped_spruce_log_top",
+    "side": "nemos-mossy-blocks:block/mossy_stripped_spruce_log"
+  }
+}

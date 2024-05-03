@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nemos-mossy-blocks:block/mossy_crimson_stem_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nemos-mossy-blocks:block/mossy_crimson_stem"
+    },
+    "axis=z": {
+      "model": "nemos-mossy-blocks:block/mossy_crimson_stem_horizontal",
+      "x": 90
+    }
+  }
+}
