@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "nemos-mossy-blocks:mossy_bamboo_mosaic_slab"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "nemos-mossy-blocks:mossy_bamboo_mosaic"
+  }
+}

@@ -1,7 +1,8 @@
-# Changelog v1.1.0
+# Changelog v1.2.0
 
 ## Additions
-- Added Mossy Glass, Glass Panes, Stained Glass & Stained Glass Panes
+- Added Mossy Logs/Stems/Wood/Hyphae, Stripped Logs/Stems/Wood/Hyphae
+- Added Mossy Bamboo Mosaic, Slabs, Stairs
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>

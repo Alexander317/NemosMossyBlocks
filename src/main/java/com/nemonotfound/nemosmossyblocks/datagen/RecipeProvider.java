@@ -30,6 +30,7 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.STONE, ModBlocks.MOSSY_STONE, "mossy_stone");
         createMossyBlockRecipe(exporter, Blocks.ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_PLANKS, "mossy_planks");
         createMossyBlockRecipe(exporter, Blocks.BAMBOO_PLANKS, ModBlocks.MOSSY_BAMBOO_PLANKS, "mossy_planks");
+        createMossyBlockRecipe(exporter, Blocks.BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC, "mossy_planks");
         createMossyBlockRecipe(exporter, Blocks.BIRCH_PLANKS, ModBlocks.MOSSY_BIRCH_PLANKS, "mossy_planks");
         createMossyBlockRecipe(exporter, Blocks.CHERRY_PLANKS, ModBlocks.MOSSY_CHERRY_PLANKS, "mossy_planks");
         createMossyBlockRecipe(exporter, Blocks.CRIMSON_PLANKS, ModBlocks.MOSSY_CRIMSON_PLANKS, "mossy_planks");
@@ -80,17 +81,17 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, "mossy_glass");
 
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_ACACIA_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_BAMBOO_BLOCKS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_BIRCH_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_CHERRY_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_CRIMSON_STEMS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_DARK_OAK_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_JUNGLE_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_MANGROVE_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_OAK_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_SPRUCE_LOGS);
-        createPlanksRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, "has_mossy_logs", "mossy_planks", ModItemTags.MOSSY_WARPED_STEMS);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_ACACIA_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_BAMBOO_BLOCKS);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_BIRCH_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_BIRCH_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_CHERRY_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_CHERRY_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_CRIMSON_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_CRIMSON_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_DARK_OAK_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_JUNGLE_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_JUNGLE_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_MANGROVE_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_MANGROVE_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_OAK_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_OAK_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_SPRUCE_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_SPRUCE_WOOD);
+        createPlanksRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_WARPED_WOOD);
 
         createStairsRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_STAIRS);
         createStairsRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_STAIRS, "has_mossy_planks",
@@ -115,6 +116,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
         createStairsRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_STAIRS, "has_mossy_planks",
                 "mossy_wooden_stairs", ModItemTags.MOSSY_PLANKS);
+        createStairsRecipe(exporter, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_STAIRS);
 
         createSlabRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_SLAB);
         createSlabRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_SLAB, "has_mossy_planks",
@@ -139,6 +141,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
         createSlabRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_SLAB, "has_mossy_planks",
                 "mossy_wooden_slab", ModItemTags.MOSSY_PLANKS);
+        createSlabRecipe(exporter, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
 
         createPressurePlateRecipe(exporter, ModBlocks.MOSSY_STONE, ModBlocks.MOSSY_STONE_PRESSURE_PLATE);
         createPressurePlateRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_PRESSURE_PLATE, "has_mossy_planks",
@@ -281,6 +284,26 @@ public class RecipeProvider extends FabricRecipeProvider {
         createGlassPaneRecipe(exporter, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE,
                 "has_mossy_stained_glass", "mossy_stained_glass", ModItemTags.MOSSY_STAINED_GLASS);
 
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_ACACIA_WOOD, ModBlocks.MOSSY_ACACIA_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_BIRCH_WOOD, ModBlocks.MOSSY_BIRCH_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_DARK_OAK_WOOD, ModBlocks.MOSSY_DARK_OAK_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_JUNGLE_WOOD, ModBlocks.MOSSY_JUNGLE_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_OAK_WOOD, ModBlocks.MOSSY_OAK_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_SPRUCE_WOOD, ModBlocks.MOSSY_SPRUCE_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_CRIMSON_HYPHAE, ModBlocks.MOSSY_CRIMSON_STEM);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_WARPED_HYPHAE, ModBlocks.MOSSY_WARPED_STEM);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_MANGROVE_WOOD, ModBlocks.MOSSY_MANGROVE_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_ACACIA_WOOD, ModBlocks.MOSSY_STRIPPED_ACACIA_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_BIRCH_WOOD, ModBlocks.MOSSY_STRIPPED_BIRCH_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_DARK_OAK_WOOD, ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_JUNGLE_WOOD, ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_OAK_WOOD, ModBlocks.MOSSY_STRIPPED_OAK_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_SPRUCE_WOOD, ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_CRIMSON_HYPHAE, ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_WARPED_HYPHAE, ModBlocks.MOSSY_STRIPPED_WARPED_STEM);
+        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_MANGROVE_WOOD, ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG);
+
+        VanillaRecipeProvider.offerMosaicRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
     }
 
     private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {

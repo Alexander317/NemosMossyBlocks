@@ -159,5 +159,28 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.MOSSY_STRIPPED_OAK_LOG);
         this.addDrop(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG);
         this.addDrop(ModBlocks.MOSSY_STRIPPED_WARPED_STEM);
+        this.addDrop(ModBlocks.MOSSY_ACACIA_WOOD);
+        this.addDrop(ModBlocks.MOSSY_BIRCH_WOOD);
+        this.addDrop(ModBlocks.MOSSY_CHERRY_WOOD);
+        this.addDrop(ModBlocks.MOSSY_CRIMSON_HYPHAE);
+        this.addDrop(ModBlocks.MOSSY_DARK_OAK_WOOD);
+        this.addDrop(ModBlocks.MOSSY_JUNGLE_WOOD);
+        this.addDrop(ModBlocks.MOSSY_MANGROVE_WOOD);
+        this.addDrop(ModBlocks.MOSSY_OAK_WOOD);
+        this.addDrop(ModBlocks.MOSSY_SPRUCE_WOOD);
+        this.addDrop(ModBlocks.MOSSY_WARPED_HYPHAE);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_ACACIA_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_BIRCH_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_CHERRY_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_CRIMSON_HYPHAE);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_DARK_OAK_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_JUNGLE_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_MANGROVE_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_OAK_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_SPRUCE_WOOD);
+        this.addDrop(ModBlocks.MOSSY_STRIPPED_WARPED_HYPHAE);
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC);
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC_STAIRS);
+        this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nemos-mossy-blocks:block/mossy_cherry_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nemos-mossy-blocks:block/mossy_cherry_wood"
+    },
+    "axis=z": {
+      "model": "nemos-mossy-blocks:block/mossy_cherry_wood",
+      "x": 90
+    }
+  }
+}

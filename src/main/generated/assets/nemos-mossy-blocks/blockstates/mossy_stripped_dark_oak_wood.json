@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nemos-mossy-blocks:block/mossy_stripped_dark_oak_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nemos-mossy-blocks:block/mossy_stripped_dark_oak_wood"
+    },
+    "axis=z": {
+      "model": "nemos-mossy-blocks:block/mossy_stripped_dark_oak_wood",
+      "x": 90
+    }
+  }
+}

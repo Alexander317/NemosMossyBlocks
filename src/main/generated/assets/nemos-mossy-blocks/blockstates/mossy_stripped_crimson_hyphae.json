@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nemos-mossy-blocks:block/mossy_stripped_crimson_hyphae",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nemos-mossy-blocks:block/mossy_stripped_crimson_hyphae"
+    },
+    "axis=z": {
+      "model": "nemos-mossy-blocks:block/mossy_stripped_crimson_hyphae",
+      "x": 90
+    }
+  }
+}

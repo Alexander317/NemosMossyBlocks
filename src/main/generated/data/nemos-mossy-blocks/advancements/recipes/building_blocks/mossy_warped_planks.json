@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mossy_logs": {
+    "has_mossy_wood": {
       "conditions": {
         "items": [
           {
-            "items": "#nemos-mossy-blocks:mossy_warped_stems"
+            "items": "#nemos-mossy-blocks:mossy_warped_wood"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mossy_logs"
+      "has_mossy_wood"
     ]
   ],
   "rewards": {
