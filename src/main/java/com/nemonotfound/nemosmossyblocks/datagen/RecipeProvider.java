@@ -12,6 +12,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -80,6 +81,7 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.TINTED_GLASS, ModBlocks.MOSSY_TINTED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.WHITE_STAINED_GLASS, ModBlocks.MOSSY_WHITE_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.YELLOW_STAINED_GLASS, ModBlocks.MOSSY_YELLOW_STAINED_GLASS, "mossy_glass");
+        createMossyBlockRecipe(exporter, Blocks.IRON_BARS, ModBlocks.MOSSY_IRON_BARS, "mossy_iron_bars");
 
         createPlanksRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_ACACIA_WOOD);
         createPlanksRecipe(exporter, ModBlocks.MOSSY_BAMBOO_PLANKS, "has_mossy_wood", "mossy_planks", ModItemTags.MOSSY_BAMBOO_BLOCKS);
@@ -189,6 +191,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
         createWallRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_FENCE, "has_mossy_planks",
                 "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
+        createWallRecipe(exporter, Items.IRON_INGOT, ModBlocks.MOSSY_IRON_BARS, "mossy_iron_bars");
 
         createFenceGateRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_FENCE_GATE, "has_mossy_planks",
                 "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
@@ -367,6 +370,13 @@ public class RecipeProvider extends FabricRecipeProvider {
         VanillaRecipeProvider.getWallRecipe(RecipeCategory.DECORATIONS, result, Ingredient.ofItems(input))
                 .group(group)
                 .criterion(criterion, VanillaRecipeProvider.conditionsFromTag(tag))
+                .offerTo(exporter);
+    }
+
+    private void createWallRecipe(RecipeExporter exporter, Item input, Block result, String group) {
+        VanillaRecipeProvider.getWallRecipe(RecipeCategory.DECORATIONS, result, Ingredient.ofItems(input))
+                .group(group)
+                .criterion(VanillaRecipeProvider.hasItem(input), VanillaRecipeProvider.conditionsFromItem(input))
                 .offerTo(exporter);
     }
 

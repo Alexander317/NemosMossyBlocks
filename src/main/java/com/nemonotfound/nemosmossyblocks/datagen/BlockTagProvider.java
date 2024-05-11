@@ -145,6 +145,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOSSY_STONE_STAIRS)
                 .add(ModBlocks.MOSSY_STONE_SLAB)
                 .add(ModBlocks.MOSSY_STONE_PRESSURE_PLATE)
-                .add(ModBlocks.MOSSY_STONE_BUTTON);
+                .add(ModBlocks.MOSSY_STONE_BUTTON)
+                .add(ModBlocks.MOSSY_IRON_BARS);
     }
 }

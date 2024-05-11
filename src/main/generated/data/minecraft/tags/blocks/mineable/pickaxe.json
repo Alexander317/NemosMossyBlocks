@@ -4,6 +4,7 @@
     "nemos-mossy-blocks:mossy_stone_stairs",
     "nemos-mossy-blocks:mossy_stone_slab",
     "nemos-mossy-blocks:mossy_stone_pressure_plate",
-    "nemos-mossy-blocks:mossy_stone_button"
+    "nemos-mossy-blocks:mossy_stone_button",
+    "nemos-mossy-blocks:mossy_iron_bars"
   ]
 }

@@ -3,9 +3,10 @@ package com.nemonotfound.nemosmossyblocks.datagen;
 import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.*;
 import net.minecraft.data.client.BlockStateModelGenerator.BlockTexturePool;
-import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.state.property.Properties;
+import net.minecraft.util.Identifier;
 
 public class ModelProvider extends FabricModelProvider {
 
@@ -154,10 +155,62 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_OAK_LOG).log(ModBlocks.MOSSY_STRIPPED_OAK_LOG).wood(ModBlocks.MOSSY_STRIPPED_OAK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG).log(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG).wood(ModBlocks.MOSSY_STRIPPED_SPRUCE_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_WARPED_STEM).stem(ModBlocks.MOSSY_STRIPPED_WARPED_STEM).wood(ModBlocks.MOSSY_STRIPPED_WARPED_HYPHAE);
+
+        registerIronBars(blockStateModelGenerator);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
+    }
+
+    private void registerIronBars(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier identifier = ModelIds.getBlockSubModelId(ModBlocks.MOSSY_IRON_BARS, "_post_ends");
+        Identifier identifier2 = ModelIds.getBlockSubModelId(ModBlocks.MOSSY_IRON_BARS, "_post");
+        Identifier identifier3 = ModelIds.getBlockSubModelId(ModBlocks.MOSSY_IRON_BARS, "_cap");
+        Identifier identifier4 = ModelIds.getBlockSubModelId(ModBlocks.MOSSY_IRON_BARS, "_cap_alt");
+        Identifier identifier5 = ModelIds.getBlockSubModelId(ModBlocks.MOSSY_IRON_BARS, "_side");
+        Identifier identifier6 = ModelIds.getBlockSubModelId(ModBlocks.MOSSY_IRON_BARS, "_side_alt");
+
+        blockStateModelGenerator.blockStateCollector.accept(MultipartBlockStateSupplier.create(ModBlocks.MOSSY_IRON_BARS)
+                .with(BlockStateVariant.create().put(VariantSettings.MODEL, identifier))
+                .with(When.create()
+                        .set(Properties.NORTH, false).set(Properties.EAST, false)
+                        .set(Properties.SOUTH, false).set(Properties.WEST, false), BlockStateVariant.create()
+                        .put(VariantSettings.MODEL, identifier2))
+                .with(When.create().set(Properties.NORTH, true)
+                                .set(Properties.EAST, false)
+                                .set(Properties.SOUTH, false)
+                                .set(Properties.WEST, false),
+                        BlockStateVariant.create().put(VariantSettings.MODEL, identifier3))
+                .with(When.create()
+                        .set(Properties.NORTH, false)
+                        .set(Properties.EAST, true)
+                        .set(Properties.SOUTH, false)
+                        .set(Properties.WEST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3)
+                        .put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .with(When.create().set(Properties.NORTH, false)
+                        .set(Properties.EAST, false)
+                        .set(Properties.SOUTH, true)
+                        .set(Properties.WEST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4))
+                .with(When.create()
+                        .set(Properties.NORTH, false).set(Properties.EAST, false)
+                        .set(Properties.SOUTH, false)
+                        .set(Properties.WEST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4)
+                        .put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .with(When.create()
+                        .set(Properties.NORTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5))
+                .with(When.create()
+                        .set(Properties.EAST, true), BlockStateVariant.create()
+                        .put(VariantSettings.MODEL, identifier5).put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .with(When.create()
+                        .set(Properties.SOUTH, true), BlockStateVariant.create()
+                        .put(VariantSettings.MODEL, identifier6))
+                .with(When.create()
+                                .set(Properties.WEST, true),
+                        BlockStateVariant.create().put(VariantSettings.MODEL, identifier6).put(VariantSettings.Y,
+                                VariantSettings.Rotation.R90)));
+
+        blockStateModelGenerator.registerItemModel(ModBlocks.MOSSY_IRON_BARS);
     }
 }

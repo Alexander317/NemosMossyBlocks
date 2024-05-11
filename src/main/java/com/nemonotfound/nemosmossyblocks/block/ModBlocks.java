@@ -511,6 +511,8 @@ public class ModBlocks {
     public static final Block MOSSY_YELLOW_STAINED_GLASS_PANE = registerBlock("mossy_yellow_stained_glass_pane",
             new StainedGlassPaneBlock(DyeColor.YELLOW, YELLOW_STAINED_GLASS_PANE.getSettings()), ItemGroups.COLORED_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
+    public static final Block MOSSY_IRON_BARS = registerBlock("mossy_iron_bars",
+            new PaneBlock(IRON_BARS.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
 
     public static void registerBlocks() {
         log.info("Register blocks");

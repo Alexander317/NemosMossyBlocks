@@ -182,5 +182,6 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC);
         this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC_STAIRS);
         this.addDrop(ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
+        this.addDrop(ModBlocks.MOSSY_IRON_BARS);
     }
 }
