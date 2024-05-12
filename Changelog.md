@@ -1,7 +1,7 @@
-# Changelog v1.3.0
+# Changelog v1.3.1
 
-## Additions
-- Added Mossy Iron Bars
+## Fixes
+- Mossy iron bars do not connect seamlessly to iron bars
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>

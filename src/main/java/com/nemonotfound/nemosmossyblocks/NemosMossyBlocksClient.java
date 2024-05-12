@@ -46,6 +46,6 @@ public class NemosMossyBlocksClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_WHITE_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
 
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_IRON_BARS, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_IRON_BARS, RenderLayer.getCutoutMipped());
 	}
 }
