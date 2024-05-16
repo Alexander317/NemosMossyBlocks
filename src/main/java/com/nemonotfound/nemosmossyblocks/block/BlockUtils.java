@@ -31,4 +31,9 @@ public class BlockUtils {
             .put(ModBlocks.MOSSY_CRIMSON_HYPHAE, Blocks.STRIPPED_CRIMSON_HYPHAE)
             .put(ModBlocks.MOSSY_MANGROVE_WOOD, Blocks.STRIPPED_MANGROVE_WOOD)
             .build();
+
+    public static final Map<Block, Block> SHEARED_MOSSY_BLOCKS = new ImmutableMap.Builder<Block, Block>()
+            .put(ModBlocks.MOSSY_STONE, Blocks.STONE)
+            .put(ModBlocks.MOSSY_STONE_STAIRS, Blocks.STONE_STAIRS)
+            .build();
 }

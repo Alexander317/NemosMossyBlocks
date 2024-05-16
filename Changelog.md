@@ -1,7 +1,11 @@
-# Changelog v1.3.1
+# Changelog v1.4
 
-## Fixes
-- Mossy iron bars do not connect seamlessly to iron bars
+## Additions
+- Added Moss Ball
+  - Can be crafted into a Moss Block with 4 Moss Balls
+  - Are obtained by either crafting Moss Blocks to Moss Balls or shearing mossy blocks
+  - Can be thrown (doesn't do anything yet)
+- Shears are able to shear mossy blocks
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>

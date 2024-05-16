@@ -515,7 +515,7 @@ public class ModBlocks {
             new PaneBlock(IRON_BARS.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
 
     public static void registerBlocks() {
-        log.info("Register blocks");
+        log.debug("Register blocks");
     }
 
     @SafeVarargs

@@ -1,6 +1,7 @@
 package com.nemonotfound.nemosmossyblocks.datagen;
 
 import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.item.ModItems;
 import com.nemonotfound.nemosmossyblocks.registry.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -307,6 +308,9 @@ public class RecipeProvider extends FabricRecipeProvider {
         VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_MANGROVE_WOOD, ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG);
 
         VanillaRecipeProvider.offerMosaicRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
+
+        VanillaRecipeProvider.offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.MOSS_BALL,
+                RecipeCategory.BUILDING_BLOCKS, Blocks.MOSS_BLOCK);
     }
 
     private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {

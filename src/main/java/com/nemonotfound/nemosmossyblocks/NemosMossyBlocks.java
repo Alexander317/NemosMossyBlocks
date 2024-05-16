@@ -1,7 +1,9 @@
 package com.nemonotfound.nemosmossyblocks;
 
 import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.entity.Entities;
 import com.nemonotfound.nemosmossyblocks.item.ModItemGroups;
+import com.nemonotfound.nemosmossyblocks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +20,7 @@ public class NemosMossyBlocks implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModItemGroups.registerItemGroups();
 		ModItemGroups.registerItemsToItemGroups();
+		ModItems.registerItems();
+		Entities.registerEntities();
 	}
 }
