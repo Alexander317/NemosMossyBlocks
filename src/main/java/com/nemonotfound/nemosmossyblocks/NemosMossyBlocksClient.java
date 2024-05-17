@@ -1,9 +1,15 @@
 package com.nemonotfound.nemosmossyblocks;
 
 import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.entity.Entities;
+import com.nemonotfound.nemosmossyblocks.particle.ModCrackParticle;
+import com.nemonotfound.nemosmossyblocks.particle.Particles;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 
 public class NemosMossyBlocksClient implements ClientModInitializer {
 
@@ -47,5 +53,9 @@ public class NemosMossyBlocksClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_YELLOW_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_IRON_BARS, RenderLayer.getCutoutMipped());
+
+		EntityRendererRegistry.register(Entities.MOSS_BALL, FlyingItemEntityRenderer::new);
+
+		ParticleFactoryRegistry.getInstance().register(Particles.ITEM_MOSS_BALL, new ModCrackParticle.MossBallFactory());
 	}
 }

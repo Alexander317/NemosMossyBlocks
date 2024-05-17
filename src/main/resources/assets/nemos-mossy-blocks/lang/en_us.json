@@ -176,5 +176,7 @@
   "block.nemos-mossy-blocks.mossy_white_stained_glass_pane": "Mossy White Stained Glass Pane",
   "block.nemos-mossy-blocks.mossy_yellow_stained_glass_pane": "Mossy Yellow Stained Glass Pane",
 
-  "block.nemos-mossy-blocks.mossy_iron_bars": "Mossy Iron Bars"
+  "block.nemos-mossy-blocks.mossy_iron_bars": "Mossy Iron Bars",
+
+  "item.nemos-mossy-blocks.moss_ball": "Moss Ball"
 }

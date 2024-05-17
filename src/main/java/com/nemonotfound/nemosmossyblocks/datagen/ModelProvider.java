@@ -1,6 +1,7 @@
 package com.nemonotfound.nemosmossyblocks.datagen;
 
 import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
+import com.nemonotfound.nemosmossyblocks.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -161,7 +162,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        itemModelGenerator.register(ModItems.MOSS_BALL, Models.GENERATED);
     }
 
     private void registerIronBars(BlockStateModelGenerator blockStateModelGenerator) {
