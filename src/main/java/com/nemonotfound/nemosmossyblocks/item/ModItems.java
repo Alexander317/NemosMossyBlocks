@@ -17,7 +17,7 @@ import static com.nemonotfound.nemosmossyblocks.NemosMossyBlocks.log;
 public class ModItems {
 
     public static final Item MOSS_BALL = registerItem("moss_ball",
-            new MossBallItem(new Item.Settings()), ItemGroups.COMBAT, ItemGroups.INGREDIENTS,
+            new MossBallItem(new Item.Settings().maxCount(16)), ItemGroups.COMBAT, ItemGroups.INGREDIENTS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
 
     public static void registerItems() {

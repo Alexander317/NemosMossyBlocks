@@ -309,8 +309,13 @@ public class RecipeProvider extends FabricRecipeProvider {
 
         VanillaRecipeProvider.offerMosaicRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
 
-        VanillaRecipeProvider.offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.MOSS_BALL,
-                RecipeCategory.BUILDING_BLOCKS, Blocks.MOSS_BLOCK);
+        VanillaRecipeProvider.offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.MOSS_BLOCK,
+                ModItems.MOSS_BALL);
+        ShapelessRecipeJsonBuilder
+                .create(RecipeCategory.MISC, ModItems.MOSS_BALL, 4).input(Blocks.MOSS_BLOCK)
+                .criterion(RecipeProvider.hasItem(Blocks.MOSS_BLOCK),
+                        RecipeProvider.conditionsFromItem(Blocks.MOSS_BLOCK))
+                .offerTo(exporter);
     }
 
     private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
