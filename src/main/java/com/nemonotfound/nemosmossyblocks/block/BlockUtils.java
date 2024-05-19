@@ -164,7 +164,6 @@ public class BlockUtils {
             .put(ModBlocks.MOSSY_GLASS_PANE, Blocks.GLASS_PANE)
             .put(ModBlocks.MOSSY_BLACK_STAINED_GLASS, Blocks.BLACK_STAINED_GLASS)
             .put(ModBlocks.MOSSY_BLACK_STAINED_GLASS_PANE, Blocks.BLACK_STAINED_GLASS_PANE)
-
             .put(ModBlocks.MOSSY_BLUE_STAINED_GLASS, Blocks.BLUE_STAINED_GLASS)
             .put(ModBlocks.MOSSY_BLUE_STAINED_GLASS_PANE, Blocks.BLUE_STAINED_GLASS_PANE)
             .put(ModBlocks.MOSSY_BROWN_STAINED_GLASS, Blocks.BROWN_STAINED_GLASS)
@@ -204,5 +203,6 @@ public class BlockUtils {
             .put(Blocks.MOSSY_STONE_BRICK_STAIRS, Blocks.STONE_BRICK_STAIRS)
             .put(Blocks.MOSSY_STONE_BRICK_SLAB, Blocks.STONE_BRICK_SLAB)
             .put(Blocks.MOSSY_STONE_BRICK_WALL, Blocks.STONE_BRICK_WALL)
+            .put(Blocks.INFESTED_MOSSY_STONE_BRICKS, Blocks.INFESTED_STONE_BRICKS)
             .build();
 }

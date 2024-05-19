@@ -1,11 +1,14 @@
-# Changelog v1.4
+# Changelog v1.5
 
 ## Additions
-- Added Moss Ball
-  - Can be crafted into a Moss Block with 4 Moss Balls
-  - Are obtained by either crafting Moss Blocks to Moss Balls or shearing mossy blocks
-  - Can be thrown (doesn't do anything yet)
-- Shears are able to shear mossy blocks
+
+
+## Changes
+- Adapted textures for logs/stems
+
+## Breaking Changes
+- Removed Mossy Bamboo Block
+- Removed Stripped Mossy Bamboo Block
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>
