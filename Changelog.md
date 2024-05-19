@@ -1,14 +1,12 @@
-# Changelog v1.5
+# Changelog v1.4.1
 
 ## Additions
 
 
 ## Changes
-- Adapted textures for logs/stems
-
-## Breaking Changes
-- Removed Mossy Bamboo Block
-- Removed Stripped Mossy Bamboo Block
+- Changed textures for logs/stems
+- Changed textures for bamboo & stripped bamboo block
+- Changed texture for stripped logs/stems
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>
