@@ -6,9 +6,7 @@
   "block.nemos-mossy-blocks.mossy_stone_button": "Mossy Stone Button",
 
   "block.nemos-mossy-blocks.mossy_acacia_log": "Mossy Acacia Log",
-  "block.nemos-mossy-blocks.mossy_stripped_acacia_log": "Mossy Stripped Acacia Log",
   "block.nemos-mossy-blocks.mossy_acacia_wood": "Mossy Acacia Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_acacia_wood": "Mossy Stripped Acacia Wood",
   "block.nemos-mossy-blocks.mossy_acacia_planks": "Mossy Acacia Planks",
   "block.nemos-mossy-blocks.mossy_acacia_stairs": "Mossy Acacia Stairs",
   "block.nemos-mossy-blocks.mossy_acacia_slab": "Mossy Acacia Slab",
@@ -18,7 +16,6 @@
   "block.nemos-mossy-blocks.mossy_acacia_fence_gate": "Mossy Acacia Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_bamboo_block": "Mossy Bamboo Block",
-  "block.nemos-mossy-blocks.mossy_stripped_bamboo_block": "Mossy Stripped Bamboo Block",
   "block.nemos-mossy-blocks.mossy_bamboo_planks": "Mossy Bamboo Planks",
   "block.nemos-mossy-blocks.mossy_bamboo_mosaic": "Mossy Bamboo Mosaic",
   "block.nemos-mossy-blocks.mossy_bamboo_stairs": "Mossy Bamboo Stairs",
@@ -31,9 +28,7 @@
   "block.nemos-mossy-blocks.mossy_bamboo_fence_gate": "Mossy Bamboo Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_birch_log": "Mossy Birch Log",
-  "block.nemos-mossy-blocks.mossy_stripped_birch_log": "Mossy Stripped Birch Log",
   "block.nemos-mossy-blocks.mossy_birch_wood": "Mossy Birch Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_birch_wood": "Mossy Stripped Birch Wood",
   "block.nemos-mossy-blocks.mossy_birch_planks": "Mossy Birch Planks",
   "block.nemos-mossy-blocks.mossy_birch_stairs": "Mossy Birch Stairs",
   "block.nemos-mossy-blocks.mossy_birch_slab": "Mossy Birch Slab",
@@ -43,9 +38,7 @@
   "block.nemos-mossy-blocks.mossy_birch_fence_gate": "Mossy Birch Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_cherry_log": "Mossy Cherry Log",
-  "block.nemos-mossy-blocks.mossy_stripped_cherry_log": "Mossy Stripped Cherry Log",
   "block.nemos-mossy-blocks.mossy_cherry_wood": "Mossy Cherry Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_cherry_wood": "Mossy Stripped Cherry Wood",
   "block.nemos-mossy-blocks.mossy_cherry_planks": "Mossy Cherry Planks",
   "block.nemos-mossy-blocks.mossy_cherry_stairs": "Mossy Cherry Stairs",
   "block.nemos-mossy-blocks.mossy_cherry_slab": "Mossy Cherry Slab",
@@ -55,9 +48,7 @@
   "block.nemos-mossy-blocks.mossy_cherry_fence_gate": "Mossy Cherry Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_crimson_stem": "Mossy Crimson Stem",
-  "block.nemos-mossy-blocks.mossy_stripped_crimson_stem": "Mossy Stripped Crimson Stem",
   "block.nemos-mossy-blocks.mossy_crimson_hyphae": "Mossy Crimson Hyphae",
-  "block.nemos-mossy-blocks.mossy_stripped_crimson_hyphae": "Mossy Stripped Crimson Hyphae",
   "block.nemos-mossy-blocks.mossy_crimson_planks": "Mossy Crimson Planks",
   "block.nemos-mossy-blocks.mossy_crimson_stairs": "Mossy Crimson Stairs",
   "block.nemos-mossy-blocks.mossy_crimson_slab": "Mossy Crimson Slab",
@@ -67,9 +58,7 @@
   "block.nemos-mossy-blocks.mossy_crimson_fence_gate": "Mossy Crimson Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_dark_oak_log": "Mossy Dark Oak Log",
-  "block.nemos-mossy-blocks.mossy_stripped_dark_oak_log": "Mossy Stripped Dark Oak Log",
   "block.nemos-mossy-blocks.mossy_dark_oak_wood": "Mossy Dark Oak Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_dark_oak_wood": "Mossy Stripped Dark Oak Wood",
   "block.nemos-mossy-blocks.mossy_dark_oak_planks": "Mossy Dark Oak Planks",
   "block.nemos-mossy-blocks.mossy_dark_oak_stairs": "Mossy Dark Oak Stairs",
   "block.nemos-mossy-blocks.mossy_dark_oak_slab": "Mossy Dark Oak Slab",
@@ -79,9 +68,7 @@
   "block.nemos-mossy-blocks.mossy_dark_oak_fence_gate": "Mossy Dark Oak Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_jungle_log": "Mossy Jungle Log",
-  "block.nemos-mossy-blocks.mossy_stripped_jungle_log": "Mossy Stripped Jungle Log",
   "block.nemos-mossy-blocks.mossy_jungle_wood": "Mossy Jungle Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_jungle_wood": "Mossy Stripped Jungle Wood",
   "block.nemos-mossy-blocks.mossy_jungle_planks": "Mossy Jungle Planks",
   "block.nemos-mossy-blocks.mossy_jungle_stairs": "Mossy Jungle Stairs",
   "block.nemos-mossy-blocks.mossy_jungle_slab": "Mossy Jungle Slab",
@@ -91,9 +78,7 @@
   "block.nemos-mossy-blocks.mossy_jungle_fence_gate": "Mossy Jungle Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_mangrove_log": "Mossy Mangrove Log",
-  "block.nemos-mossy-blocks.mossy_stripped_mangrove_log": "Mossy Stripped Mangrove Log",
   "block.nemos-mossy-blocks.mossy_mangrove_wood": "Mossy Mangrove Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_mangrove_wood": "Mossy Stripped Mangrove Wood",
   "block.nemos-mossy-blocks.mossy_mangrove_planks": "Mossy Mangrove Planks",
   "block.nemos-mossy-blocks.mossy_mangrove_stairs": "Mossy Mangrove Stairs",
   "block.nemos-mossy-blocks.mossy_mangrove_slab": "Mossy Mangrove Slab",
@@ -103,9 +88,7 @@
   "block.nemos-mossy-blocks.mossy_mangrove_fence_gate": "Mossy Mangrove Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_oak_log": "Mossy Oak Log",
-  "block.nemos-mossy-blocks.mossy_stripped_oak_log": "Mossy Stripped Oak Log",
   "block.nemos-mossy-blocks.mossy_oak_wood": "Mossy Oak Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_oak_wood": "Mossy Stripped Oak Wood",
   "block.nemos-mossy-blocks.mossy_oak_planks": "Mossy Oak Planks",
   "block.nemos-mossy-blocks.mossy_oak_stairs": "Mossy Oak Stairs",
   "block.nemos-mossy-blocks.mossy_oak_slab": "Mossy Oak Slab",
@@ -115,9 +98,7 @@
   "block.nemos-mossy-blocks.mossy_oak_fence_gate": "Mossy Oak Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_spruce_log": "Mossy Spruce Log",
-  "block.nemos-mossy-blocks.mossy_stripped_spruce_log": "Mossy Stripped Spruce Log",
   "block.nemos-mossy-blocks.mossy_spruce_wood": "Mossy Spruce Wood",
-  "block.nemos-mossy-blocks.mossy_stripped_spruce_wood": "Mossy Stripped Spruce Wood",
   "block.nemos-mossy-blocks.mossy_spruce_planks": "Mossy Spruce Planks",
   "block.nemos-mossy-blocks.mossy_spruce_stairs": "Mossy Spruce Stairs",
   "block.nemos-mossy-blocks.mossy_spruce_slab": "Mossy Spruce Slab",
@@ -127,9 +108,7 @@
   "block.nemos-mossy-blocks.mossy_spruce_fence_gate": "Mossy Spruce Fence Gate",
 
   "block.nemos-mossy-blocks.mossy_warped_stem": "Mossy Warped Stem",
-  "block.nemos-mossy-blocks.mossy_stripped_warped_stem": "Mossy Stripped Warped Stem",
   "block.nemos-mossy-blocks.mossy_warped_hyphae": "Mossy Warped Hyphae",
-  "block.nemos-mossy-blocks.mossy_stripped_warped_hyphae": "Mossy Stripped Warped Hyphae",
   "block.nemos-mossy-blocks.mossy_warped_planks": "Mossy Warped Planks",
   "block.nemos-mossy-blocks.mossy_warped_stairs": "Mossy Warped Stairs",
   "block.nemos-mossy-blocks.mossy_warped_slab": "Mossy Warped Slab",

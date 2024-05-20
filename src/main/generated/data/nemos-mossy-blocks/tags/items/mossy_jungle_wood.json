@@ -1,8 +1,6 @@
 {
   "values": [
     "nemos-mossy-blocks:mossy_jungle_log",
-    "nemos-mossy-blocks:mossy_stripped_jungle_log",
-    "nemos-mossy-blocks:mossy_jungle_wood",
-    "nemos-mossy-blocks:mossy_stripped_jungle_wood"
+    "nemos-mossy-blocks:mossy_jungle_wood"
   ]
 }

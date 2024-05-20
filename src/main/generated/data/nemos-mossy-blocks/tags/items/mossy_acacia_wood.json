@@ -1,8 +1,6 @@
 {
   "values": [
     "nemos-mossy-blocks:mossy_acacia_log",
-    "nemos-mossy-blocks:mossy_stripped_acacia_log",
-    "nemos-mossy-blocks:mossy_acacia_wood",
-    "nemos-mossy-blocks:mossy_stripped_acacia_wood"
+    "nemos-mossy-blocks:mossy_acacia_wood"
   ]
 }

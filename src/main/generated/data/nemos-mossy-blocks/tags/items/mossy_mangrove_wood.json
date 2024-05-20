@@ -1,8 +1,6 @@
 {
   "values": [
     "nemos-mossy-blocks:mossy_mangrove_log",
-    "nemos-mossy-blocks:mossy_stripped_mangrove_log",
-    "nemos-mossy-blocks:mossy_mangrove_wood",
-    "nemos-mossy-blocks:mossy_stripped_mangrove_wood"
+    "nemos-mossy-blocks:mossy_mangrove_wood"
   ]
 }

@@ -53,17 +53,6 @@ public class RecipeProvider extends FabricRecipeProvider {
         createMossyBlockRecipe(exporter, Blocks.OAK_LOG, ModBlocks.MOSSY_OAK_LOG, "mossy_log");
         createMossyBlockRecipe(exporter, Blocks.SPRUCE_LOG, ModBlocks.MOSSY_SPRUCE_LOG, "mossy_log");
         createMossyBlockRecipe(exporter, Blocks.WARPED_STEM, ModBlocks.MOSSY_WARPED_STEM, "mossy_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_ACACIA_LOG, ModBlocks.MOSSY_STRIPPED_ACACIA_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_BAMBOO_BLOCK, ModBlocks.MOSSY_STRIPPED_BAMBOO_BLOCK, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_BIRCH_LOG, ModBlocks.MOSSY_STRIPPED_BIRCH_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.MOSSY_STRIPPED_CHERRY_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_CRIMSON_STEM, ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_DARK_OAK_LOG, ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_JUNGLE_LOG, ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_MANGROVE_LOG, ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_OAK_LOG, ModBlocks.MOSSY_STRIPPED_OAK_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_SPRUCE_LOG, ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG, "mossy_stripped_log");
-        createMossyBlockRecipe(exporter, Blocks.STRIPPED_WARPED_STEM, ModBlocks.MOSSY_STRIPPED_WARPED_STEM, "mossy_stripped_log");
         createMossyBlockRecipe(exporter, Blocks.GLASS, ModBlocks.MOSSY_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.BLACK_STAINED_GLASS, ModBlocks.MOSSY_BLACK_STAINED_GLASS, "mossy_glass");
         createMossyBlockRecipe(exporter, Blocks.BLUE_STAINED_GLASS, ModBlocks.MOSSY_BLUE_STAINED_GLASS, "mossy_glass");
@@ -297,15 +286,6 @@ public class RecipeProvider extends FabricRecipeProvider {
         VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_CRIMSON_HYPHAE, ModBlocks.MOSSY_CRIMSON_STEM);
         VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_WARPED_HYPHAE, ModBlocks.MOSSY_WARPED_STEM);
         VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_MANGROVE_WOOD, ModBlocks.MOSSY_MANGROVE_LOG);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_ACACIA_WOOD, ModBlocks.MOSSY_STRIPPED_ACACIA_LOG);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_BIRCH_WOOD, ModBlocks.MOSSY_STRIPPED_BIRCH_LOG);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_DARK_OAK_WOOD, ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_JUNGLE_WOOD, ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_OAK_WOOD, ModBlocks.MOSSY_STRIPPED_OAK_LOG);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_SPRUCE_WOOD, ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_CRIMSON_HYPHAE, ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_WARPED_HYPHAE, ModBlocks.MOSSY_STRIPPED_WARPED_STEM);
-        VanillaRecipeProvider.offerBarkBlockRecipe(exporter, ModBlocks.MOSSY_STRIPPED_MANGROVE_WOOD, ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG);
 
         VanillaRecipeProvider.offerMosaicRecipe(exporter, RecipeCategory.DECORATIONS, ModBlocks.MOSSY_BAMBOO_MOSAIC, ModBlocks.MOSSY_BAMBOO_MOSAIC_SLAB);
 

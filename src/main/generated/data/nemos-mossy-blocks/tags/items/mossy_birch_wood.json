@@ -1,8 +1,6 @@
 {
   "values": [
     "nemos-mossy-blocks:mossy_birch_log",
-    "nemos-mossy-blocks:mossy_stripped_birch_log",
-    "nemos-mossy-blocks:mossy_birch_wood",
-    "nemos-mossy-blocks:mossy_stripped_birch_wood"
+    "nemos-mossy-blocks:mossy_birch_wood"
   ]
 }

@@ -51,56 +51,35 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(MOSSY_ACACIA_WOOD)
                 .add(ModBlocks.MOSSY_ACACIA_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_ACACIA_LOG.asItem())
-                .add(ModBlocks.MOSSY_ACACIA_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_ACACIA_WOOD.asItem());
+                .add(ModBlocks.MOSSY_ACACIA_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_BAMBOO_BLOCKS)
-                .add(ModBlocks.MOSSY_BAMBOO_BLOCK.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_BAMBOO_BLOCK.asItem());
+                .add(ModBlocks.MOSSY_BAMBOO_BLOCK.asItem());
         getOrCreateTagBuilder(MOSSY_BIRCH_WOOD)
                 .add(ModBlocks.MOSSY_BIRCH_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_BIRCH_LOG.asItem())
-                .add(ModBlocks.MOSSY_BIRCH_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_BIRCH_WOOD.asItem());
+                .add(ModBlocks.MOSSY_BIRCH_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_CHERRY_WOOD)
                 .add(ModBlocks.MOSSY_CHERRY_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_CHERRY_LOG.asItem())
-                .add(ModBlocks.MOSSY_CHERRY_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_CHERRY_WOOD.asItem());
+                .add(ModBlocks.MOSSY_CHERRY_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_CRIMSON_WOOD)
                 .add(ModBlocks.MOSSY_CRIMSON_STEM.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM.asItem())
-                .add(ModBlocks.MOSSY_CRIMSON_HYPHAE.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_CRIMSON_HYPHAE.asItem());
+                .add(ModBlocks.MOSSY_CRIMSON_HYPHAE.asItem());
         getOrCreateTagBuilder(MOSSY_DARK_OAK_WOOD)
                 .add(ModBlocks.MOSSY_DARK_OAK_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG.asItem())
-                .add(ModBlocks.MOSSY_DARK_OAK_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_DARK_OAK_WOOD.asItem());
+                .add(ModBlocks.MOSSY_DARK_OAK_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_JUNGLE_WOOD)
                 .add(ModBlocks.MOSSY_JUNGLE_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG.asItem())
-                .add(ModBlocks.MOSSY_JUNGLE_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_JUNGLE_WOOD.asItem());
+                .add(ModBlocks.MOSSY_JUNGLE_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_MANGROVE_WOOD)
                 .add(ModBlocks.MOSSY_MANGROVE_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG.asItem())
-                .add(ModBlocks.MOSSY_MANGROVE_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_MANGROVE_WOOD.asItem());
+                .add(ModBlocks.MOSSY_MANGROVE_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_OAK_WOOD)
                 .add(ModBlocks.MOSSY_OAK_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_OAK_LOG.asItem())
-                .add(ModBlocks.MOSSY_OAK_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_OAK_WOOD.asItem());
+                .add(ModBlocks.MOSSY_OAK_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_SPRUCE_WOOD)
                 .add(ModBlocks.MOSSY_SPRUCE_LOG.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG.asItem())
-                .add(ModBlocks.MOSSY_SPRUCE_WOOD.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_SPRUCE_WOOD.asItem());
+                .add(ModBlocks.MOSSY_SPRUCE_WOOD.asItem());
         getOrCreateTagBuilder(MOSSY_WARPED_WOOD)
                 .add(ModBlocks.MOSSY_WARPED_STEM.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_WARPED_STEM.asItem())
-                .add(ModBlocks.MOSSY_WARPED_HYPHAE.asItem())
-                .add(ModBlocks.MOSSY_STRIPPED_WARPED_HYPHAE.asItem());
+                .add(ModBlocks.MOSSY_WARPED_HYPHAE.asItem());
     }
 }

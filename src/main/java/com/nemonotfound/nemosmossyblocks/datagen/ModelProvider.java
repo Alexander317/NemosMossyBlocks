@@ -145,17 +145,6 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_OAK_LOG).log(ModBlocks.MOSSY_OAK_LOG).wood(ModBlocks.MOSSY_OAK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_SPRUCE_LOG).log(ModBlocks.MOSSY_SPRUCE_LOG).wood(ModBlocks.MOSSY_SPRUCE_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.MOSSY_WARPED_STEM).stem(ModBlocks.MOSSY_WARPED_STEM).wood(ModBlocks.MOSSY_WARPED_HYPHAE);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_ACACIA_LOG).log(ModBlocks.MOSSY_STRIPPED_ACACIA_LOG).wood(ModBlocks.MOSSY_STRIPPED_ACACIA_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_BAMBOO_BLOCK).log(ModBlocks.MOSSY_STRIPPED_BAMBOO_BLOCK);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_BIRCH_LOG).log(ModBlocks.MOSSY_STRIPPED_BIRCH_LOG).wood(ModBlocks.MOSSY_STRIPPED_BIRCH_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_CHERRY_LOG).log(ModBlocks.MOSSY_STRIPPED_CHERRY_LOG).wood(ModBlocks.MOSSY_STRIPPED_CHERRY_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM).log(ModBlocks.MOSSY_STRIPPED_CRIMSON_STEM).wood(ModBlocks.MOSSY_STRIPPED_CRIMSON_HYPHAE);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG).log(ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG).wood(ModBlocks.MOSSY_STRIPPED_DARK_OAK_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG).log(ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG).wood(ModBlocks.MOSSY_STRIPPED_JUNGLE_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG).log(ModBlocks.MOSSY_STRIPPED_MANGROVE_LOG).wood(ModBlocks.MOSSY_STRIPPED_MANGROVE_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_OAK_LOG).log(ModBlocks.MOSSY_STRIPPED_OAK_LOG).wood(ModBlocks.MOSSY_STRIPPED_OAK_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG).log(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG).wood(ModBlocks.MOSSY_STRIPPED_SPRUCE_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.MOSSY_STRIPPED_WARPED_STEM).stem(ModBlocks.MOSSY_STRIPPED_WARPED_STEM).wood(ModBlocks.MOSSY_STRIPPED_WARPED_HYPHAE);
 
         registerIronBars(blockStateModelGenerator);
     }
