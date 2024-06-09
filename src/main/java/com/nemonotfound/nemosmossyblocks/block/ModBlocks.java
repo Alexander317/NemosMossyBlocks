@@ -2,7 +2,7 @@ package com.nemonotfound.nemosmossyblocks.block;
 
 import com.nemonotfound.nemosmossyblocks.item.ModItemGroups;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -28,11 +28,11 @@ public class ModBlocks {
             Blocks.createLogBlock(MapColor.ORANGE, MapColor.STONE_GRAY), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_WOOD = registerBlock("mossy_acacia_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.GRAY).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.GRAY).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_PLANKS = registerBlock("mossy_acacia_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_STAIRS = registerBlock("mossy_acacia_stairs",
@@ -47,7 +47,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_PRESSURE_PLATE = registerBlock("mossy_acacia_pressure_plate",
             new PressurePlateBlock(BlockSetType.ACACIA, AbstractBlock.Settings.create().mapColor(ACACIA_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_ACACIA_BUTTON = registerBlock("mossy_acacia_button",
             Blocks.createWoodenButtonBlock(BlockSetType.ACACIA), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -76,7 +76,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BAMBOO_PRESSURE_PLATE = registerBlock("mossy_bamboo_pressure_plate",
             new PressurePlateBlock(BlockSetType.BAMBOO, AbstractBlock.Settings.create().mapColor(BAMBOO_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BAMBOO_BUTTON = registerBlock("mossy_bamboo_button",
             Blocks.createWoodenButtonBlock(BlockSetType.BAMBOO), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -84,11 +84,11 @@ public class ModBlocks {
             Blocks.createLogBlock(MapColor.PALE_YELLOW, MapColor.OFF_WHITE), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_WOOD = registerBlock("mossy_birch_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_PLANKS = registerBlock("mossy_birch_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_STAIRS = registerBlock("mossy_birch_stairs",
@@ -103,7 +103,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_PRESSURE_PLATE = registerBlock("mossy_birch_pressure_plate",
             new PressurePlateBlock(BlockSetType.BIRCH, AbstractBlock.Settings.create().mapColor(BIRCH_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_BIRCH_BUTTON = registerBlock("mossy_birch_button",
             Blocks.createWoodenButtonBlock(BlockSetType.BIRCH), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -112,10 +112,10 @@ public class ModBlocks {
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_WOOD = registerBlock("mossy_cherry_wood",
             new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GRAY)
-                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.CHERRY_WOOD).burnable()),
+                    .instrument(NoteBlockInstrument.BASS).strength(2.0f).sounds(BlockSoundGroup.CHERRY_WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_PLANKS = registerBlock("mossy_cherry_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_STAIRS = registerBlock("mossy_cherry_stairs",
@@ -130,7 +130,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_PRESSURE_PLATE = registerBlock("mossy_cherry_pressure_plate",
             new PressurePlateBlock(BlockSetType.CHERRY, AbstractBlock.Settings.create().mapColor(CHERRY_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CHERRY_BUTTON = registerBlock("mossy_cherry_button",
             Blocks.createWoodenButtonBlock(BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -138,11 +138,11 @@ public class ModBlocks {
             Blocks.createNetherStemBlock(MapColor.DULL_PINK), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_HYPHAE = registerBlock("mossy_crimson_hyphae",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_CRIMSON).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_CRIMSON).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.NETHER_STEM)), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_PLANKS = registerBlock("mossy_crimson_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_STAIRS = registerBlock("mossy_crimson_stairs",
@@ -157,7 +157,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_PRESSURE_PLATE = registerBlock("mossy_crimson_pressure_plate",
             new PressurePlateBlock(BlockSetType.CRIMSON, AbstractBlock.Settings.create().mapColor(CRIMSON_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_CRIMSON_BUTTON = registerBlock("mossy_crimson_button",
             Blocks.createWoodenButtonBlock(BlockSetType.CRIMSON), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -165,11 +165,11 @@ public class ModBlocks {
             Blocks.createLogBlock(MapColor.BROWN, MapColor.BROWN), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_WOOD = registerBlock("mossy_dark_oak_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_PLANKS = registerBlock("mossy_dark_oak_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_STAIRS = registerBlock("mossy_dark_oak_stairs",
@@ -184,7 +184,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_PRESSURE_PLATE = registerBlock("mossy_dark_oak_pressure_plate",
             new PressurePlateBlock(BlockSetType.DARK_OAK, AbstractBlock.Settings.create().mapColor(DARK_OAK_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_DARK_OAK_BUTTON = registerBlock("mossy_dark_oak_button",
             Blocks.createWoodenButtonBlock(BlockSetType.DARK_OAK), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -192,11 +192,11 @@ public class ModBlocks {
             Blocks.createLogBlock(MapColor.DIRT_BROWN, MapColor.SPRUCE_BROWN), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_WOOD = registerBlock("mossy_jungle_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_PLANKS = registerBlock("mossy_jungle_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_STAIRS = registerBlock("mossy_jungle_stairs",
@@ -211,7 +211,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_PRESSURE_PLATE = registerBlock("mossy_jungle_pressure_plate",
             new PressurePlateBlock(BlockSetType.JUNGLE, AbstractBlock.Settings.create().mapColor(JUNGLE_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_JUNGLE_BUTTON = registerBlock("mossy_jungle_button",
             Blocks.createWoodenButtonBlock(BlockSetType.JUNGLE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -219,11 +219,11 @@ public class ModBlocks {
             Blocks.createLogBlock(MapColor.RED, MapColor.SPRUCE_BROWN), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_WOOD = registerBlock("mossy_mangrove_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.RED).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.RED).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_PLANKS = registerBlock("mossy_mangrove_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.RED).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.RED).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_STAIRS = registerBlock("mossy_mangrove_stairs",
@@ -238,7 +238,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_PRESSURE_PLATE = registerBlock("mossy_mangrove_pressure_plate",
             new PressurePlateBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.create().mapColor(MANGROVE_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_MANGROVE_BUTTON = registerBlock("mossy_mangrove_button",
             Blocks.createWoodenButtonBlock(BlockSetType.MANGROVE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -246,11 +246,11 @@ public class ModBlocks {
             Blocks.createLogBlock(MapColor.OAK_TAN, MapColor.SPRUCE_BROWN), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_WOOD = registerBlock("mossy_oak_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_PLANKS = registerBlock("mossy_oak_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_STAIRS = registerBlock("mossy_oak_stairs",
@@ -265,7 +265,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_PRESSURE_PLATE = registerBlock("mossy_oak_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().mapColor(OAK_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_OAK_BUTTON = registerBlock("mossy_oak_button",
             Blocks.createWoodenButtonBlock(BlockSetType.OAK), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -273,12 +273,12 @@ public class ModBlocks {
             Blocks.createLogBlock(MapColor.SPRUCE_BROWN, MapColor.BROWN), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_WOOD = registerBlock("mossy_spruce_wood",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).instrument(Instrument.BASS)
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f).sounds(BlockSoundGroup.WOOD).burnable()), ItemGroups.BUILDING_BLOCKS,
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_PLANKS = registerBlock("mossy_spruce_planks",
             new Block(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN)
-                    .instrument(Instrument.BASS).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
+                    .instrument(NoteBlockInstrument.BASS).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_STAIRS = registerBlock("mossy_spruce_stairs",
             Blocks.createStairsBlock(MOSSY_SPRUCE_PLANKS), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -292,7 +292,7 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_PRESSURE_PLATE = registerBlock("mossy_spruce_pressure_plate",
             new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().mapColor(SPRUCE_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_SPRUCE_BUTTON = registerBlock("mossy_spruce_button",
             Blocks.createWoodenButtonBlock(BlockSetType.SPRUCE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -301,10 +301,10 @@ public class ModBlocks {
             ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_HYPHAE = registerBlock("mossy_warped_hyphae",
             new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_DULL_PINK)
-                    .instrument(Instrument.BASS).strength(2.0f).sounds(BlockSoundGroup.NETHER_STEM)),
+                    .instrument(NoteBlockInstrument.BASS).strength(2.0f).sounds(BlockSoundGroup.NETHER_STEM)),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_PLANKS = registerBlock("mossy_warped_planks",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(Instrument.BASS)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS)
                     .strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD).burnable()),
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_STAIRS = registerBlock("mossy_warped_stairs",
@@ -319,12 +319,12 @@ public class ModBlocks {
             ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_PRESSURE_PLATE = registerBlock("mossy_warped_pressure_plate",
             new PressurePlateBlock(BlockSetType.WARPED, AbstractBlock.Settings.create().mapColor(WARPED_PLANKS
-                            .getDefaultMapColor()).solid().instrument(Instrument.BASS).noCollision().strength(0.5f)
+                            .getDefaultMapColor()).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5f)
                     .burnable().pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_WARPED_BUTTON = registerBlock("mossy_warped_button",
             Blocks.createWoodenButtonBlock(BlockSetType.WARPED), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_STONE = registerBlock("mossy_stone",
-            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(Instrument.BASEDRUM)
+            new Block(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(2.0f, 6.0f)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_STONE_STAIRS = registerBlock("mossy_stone_stairs",
             Blocks.createStairsBlock(MOSSY_STONE), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -332,7 +332,7 @@ public class ModBlocks {
             new SlabBlock(MOSSY_STONE.getSettings()), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_STONE_PRESSURE_PLATE = registerBlock("mossy_stone_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY)
-                    .solid().instrument(Instrument.BASEDRUM).requiresTool().noCollision().strength(0.5F)
+                    .solid().instrument(NoteBlockInstrument.BASEDRUM).requiresTool().noCollision().strength(0.5F)
                     .pistonBehavior(PistonBehavior.DESTROY)), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
     public static final Block MOSSY_STONE_BUTTON = registerBlock("mossy_stone_button",
             Blocks.createStoneButtonBlock(), ItemGroups.BUILDING_BLOCKS, ModItemGroups.NEMOS_MOSSY_BLOCKS);
@@ -447,9 +447,9 @@ public class ModBlocks {
 
     @SafeVarargs
     private static Block registerBlock(String path, Block block, RegistryKey<ItemGroup>... itemGroups) {
-        Block registeredBlock = Registry.register(Registries.BLOCK, new Identifier(MOD_ID, path), block);
+        Block registeredBlock = Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, path), block);
         BlockItem blockItem = new BlockItem(registeredBlock, new Item.Settings());
-        Registry.register(Registries.ITEM, new Identifier(MOD_ID, path), blockItem);
+        Registry.register(Registries.ITEM, Identifier.of(MOD_ID, path), blockItem);
 
         for (RegistryKey<ItemGroup> itemGroup : itemGroups) {
             List<BlockItem> currentBlockItems = new ArrayList<>(ModItemGroups.itemGroupToBlocksMap

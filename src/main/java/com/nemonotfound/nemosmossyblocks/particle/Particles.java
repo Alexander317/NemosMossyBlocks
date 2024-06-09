@@ -13,7 +13,7 @@ public class Particles {
     public static final SimpleParticleType ITEM_MOSS_BALL = registerSimpleParticle("item_moss_ball", false);
 
     private static SimpleParticleType registerSimpleParticle(String path, boolean alwaysShow) {
-        return Registry.register(Registries.PARTICLE_TYPE, new Identifier(MOD_ID, path), FabricParticleTypes
+        return Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, path), FabricParticleTypes
                 .simple(alwaysShow));
     }
 }

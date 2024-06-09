@@ -4,7 +4,6 @@ import com.nemonotfound.nemosmossyblocks.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.registry.RegistryWrapper;
@@ -19,7 +18,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        this.addDrop(ModBlocks.MOSSY_STONE, (Block block) -> BlockLootTableGenerator.dropsWithSilkTouch(block,
+        this.addDrop(ModBlocks.MOSSY_STONE, (Block block) -> this.dropsWithSilkTouch(block,
                 this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.MOSSY_COBBLESTONE))));
         this.addDrop(ModBlocks.MOSSY_STONE_STAIRS);
         this.addDrop(ModBlocks.MOSSY_STONE_SLAB);

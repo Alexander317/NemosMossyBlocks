@@ -24,8 +24,9 @@ public class ModItems {
         log.debug("Register items");
     }
 
+    @SafeVarargs
     private static Item registerItem(String path, Item item, RegistryKey<ItemGroup>... itemGroups) {
-        Item registeredItem = Registry.register(Registries.ITEM, new Identifier(MOD_ID, path), item);
+        Item registeredItem = Registry.register(Registries.ITEM, Identifier.of(MOD_ID, path), item);
         Arrays.stream(itemGroups).forEach(itemGroup -> ItemGroupEvents.modifyEntriesEvent(itemGroup)
                 .register(content -> content.add(item)));
 
