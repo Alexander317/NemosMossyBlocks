@@ -13,7 +13,6 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -181,7 +180,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                 "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
         createWallRecipe(exporter, ModBlocks.MOSSY_WARPED_PLANKS, ModBlocks.MOSSY_WARPED_FENCE, "has_mossy_planks",
                 "mossy_wooden_fence", ModItemTags.MOSSY_PLANKS);
-        createWallRecipe(exporter, Items.IRON_INGOT, ModBlocks.MOSSY_IRON_BARS, "mossy_iron_bars");
 
         createFenceGateRecipe(exporter, ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.MOSSY_ACACIA_FENCE_GATE, "has_mossy_planks",
                 "mossy_wooden_fence_gate", ModItemTags.MOSSY_PLANKS);
@@ -301,11 +299,11 @@ public class RecipeProvider extends FabricRecipeProvider {
     private void createMossyBlockRecipe(RecipeExporter exporter, Block input, Block result, String group) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, result)
                 .input(input).input(Blocks.VINE).group(group)
-                .criterion("has_vine", VanillaRecipeProvider.conditionsFromItem(Blocks.VINE))
+                .criterion(VanillaRecipeProvider.hasItem(Blocks.VINE), VanillaRecipeProvider.conditionsFromItem(Blocks.VINE))
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, Blocks.VINE));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, result)
                 .input(input).input(Blocks.MOSS_BLOCK).group(group)
-                .criterion("has_moss_block", VanillaRecipeProvider.conditionsFromItem(Blocks.MOSS_BLOCK))
+                .criterion(VanillaRecipeProvider.hasItem(Blocks.MOSS_BLOCK), VanillaRecipeProvider.conditionsFromItem(Blocks.MOSS_BLOCK))
                 .offerTo(exporter, VanillaRecipeProvider.convertBetween(result, Blocks.MOSS_BLOCK));
     }
 

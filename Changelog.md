@@ -1,12 +1,7 @@
-# Changelog v1.4.1
+# Changelog v1.4.2
 
-## Changes
-- Changed textures for logs/stems
-- Changed textures for bamboo & stripped bamboo block
-- Changed texture for stripped logs/stems
-
-## Breaking Changes
-- Removed stripped mossy wood
+## Fixes
+- Mossy Iron Bars could be crafted by normal iron ingots
 
 ### Downloads
 [CurseForge](https://curseforge.com/minecraft/mc-mods/nemos-mossy-blocks) <br>
